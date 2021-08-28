@@ -1,0 +1,81 @@
+stackbitVersion: ~0.3.0
+ssgName: jekyll
+publishDir: _site
+dataDir: _data
+pagesDir: ''
+models:
+  post:
+    type: page
+    label: Post
+    folder: _posts
+    match: '*'
+    exclude:
+      - 2017-10-15-markdown-cheatsheet.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: featured-img
+        label: Featured Img
+      - type: list
+        name: categories
+        label: Categories
+        items:
+          type: string
+      - type: boolean
+        name: mathjax
+        label: Mathjax
+  post_1:
+    type: page
+    label: Post 1
+    folder: _posts
+    match:
+      - 2017-10-15-markdown-cheatsheet.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: summary
+        label: Summary
+      - type: string
+        name: featured-img
+        label: Featured Img
+      - type: string
+        name: categories
+        label: Categories
+  page_1:
+    type: page
+    label: Page 1
+    match: '*'
+    exclude:
+      - index.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: permalink
+        label: Permalink
+  page_2:
+    type: page
+    label: Page 2
+    match:
+      - index.md
+    fields:
+      - type: string
+        name: layout
+        label: Layout
+      - type: string
+        name: title
+        label: Title
